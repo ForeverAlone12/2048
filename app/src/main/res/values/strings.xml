@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">super2048</string>
+    <string name="empty" />
+    <string name="restart">Перезапустить</string>
+    <string name="exit">Выход</string>
+    <string name="gameOver">Игра завершена</string>
+    <string name="score">Очки: </string>
+</resources>

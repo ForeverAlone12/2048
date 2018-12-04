@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="btn0" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@drawable/btn0</item>
+    </style>
+
+    <style name="btn2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@drawable/btn2</item>
+    </style>
+
+    <style name="btn4" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@drawable/btn4</item>
+    </style>
+
+    <style name="btn8" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@drawable/btn8</item>
+    </style>
+
+    <style name="btn16" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@drawable/btn16</item>
+    </style>
+
+    <style name="btn32" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@drawable/btn32</item>
+    </style>
+
+    <style name="btn64" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@drawable/btn64</item>
+    </style>
+
+    <style name="btn128" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@drawable/btn128</item>
+    </style>
+
+    <style name="btn256" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@drawable/btn256</item>
+    </style>
+
+    <style name="btn512" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@drawable/btn512</item>
+    </style>
+
+    <style name="btn1024" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@drawable/btn1024</item>
+    </style>
+
+    <style name="btn2048" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@drawable/btn2048</item>
+    </style>
+
+</resources>
