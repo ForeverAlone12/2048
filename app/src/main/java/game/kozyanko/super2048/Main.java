@@ -125,7 +125,7 @@ public class Main extends AppCompatActivity implements GestureDetector.OnGesture
     private void clear() {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
-                setValue(i, j, "");
+                setValue(i, j, getString(R.string.empty));
             }
 
         }
@@ -152,7 +152,8 @@ public class Main extends AppCompatActivity implements GestureDetector.OnGesture
         // генерация значения ячейки
         int value = r.nextInt(4);
         // если сгенерированное значение ячейки равно 0, то вывести 4, иначе - 2
-        setValue(row, col, (value == 0) ? 4 : 2);
+        value = (value == 0) ? 4 : 2;
+        setValue(row, col, value);
     }
 
     /**
@@ -162,12 +163,12 @@ public class Main extends AppCompatActivity implements GestureDetector.OnGesture
      * @param col   индекс кнопки по столбцу
      * @param value значение кнопки
      */
-    private void setValue(int row, int col, int value) {
-        cells[row][col].setText(value);
+    private void setValue(int row, int col, Integer value) {
+        cells[row][col].setText(value.toString());
         setBtnSryle(row, col);
     }
 
-    /**
+     /**
      * Установить значение на кнопку
      *
      * @param row   индекс кнопки по строке
@@ -175,6 +176,7 @@ public class Main extends AppCompatActivity implements GestureDetector.OnGesture
      * @param value значение кнопки
      */
     private void setValue(int row, int col, String value) {
+
         cells[row][col].setText(value);
     }
 
@@ -194,8 +196,8 @@ public class Main extends AppCompatActivity implements GestureDetector.OnGesture
                 })
                 .setNegativeButton(R.string.exit, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
                         finish();
+                        dialog.dismiss();
                     }
                 })
                 .setIcon(android.R.drawable.ic_dialog_alert)
@@ -609,7 +611,7 @@ public class Main extends AppCompatActivity implements GestureDetector.OnGesture
                 btn.setTextAppearance(R.style.btn0);
                 break;
             case "2":
-                btn.setTextAppearance(R.style.btn2);
+                cells[row][col].setTextAppearance(R.style.btn2);
                 break;
             case "4":
                 btn.setTextAppearance(R.style.btn4);
